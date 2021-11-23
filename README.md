@@ -14,7 +14,7 @@
 1. Create a directory:
 
 ```
-mkdir pulumi-helm-prometheus-grafana && pulumi-helm-prometheus-grafana
+mkdir pulumi-helm-prometheus-grafana && cd pulumi-helm-prometheus-grafana
 
 ```
 
