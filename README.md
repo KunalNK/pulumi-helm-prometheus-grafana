@@ -1,5 +1,5 @@
 
-# Deploying Prometheus & Grafana application on Kubernetes Cluster using Pulumi & Helm Charts.
+# Deploy Prometheus & Grafana application on Kubernetes Cluster using Pulumi & Helm Charts.
 
 ## Prerequisites
 ```
