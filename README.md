@@ -53,6 +53,30 @@ grafana = Chart(
 
 ```
 
+5. Now, go to grafana folder & open the values.yaml file to customize the grafana login password as shown below
+
+```
+# Administrator credentials when not using an existing secret (see below)
+adminUser: admin
+adminPassword: "admin"
+
+```
+6. Similarly, go to prometheus folder & open the values.yaml file to change service type to "LoadBalancer" as shown below
+
+```
+## List of IP addresses at which the Prometheus server service is available
+## Ref: https://kubernetes.io/docs/user-guide/services/#external-ips
+    ##
+    externalIPs: []
+
+    loadBalancerIP: ""
+    loadBalancerSourceRanges: []
+    servicePort: 9090
+    sessionAffinity: None
+    type: LoadBalancer
+    
+```
+
 4. Run `pulumi up` to preview and deploy changes.  After the preview is shown you will be
     prompted if you want to continue or not.
 ```
