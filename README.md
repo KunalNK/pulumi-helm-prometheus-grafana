@@ -17,10 +17,12 @@ mkdir pulumi-helm-prometheus-grafana && pulumi-helm-prometheus-grafana
 
 ```
 
-2. Now inside the directory "pulumi-helm-prometheus-grafana" run the following command to fetch prometheus repo.
+2. Now inside the directory "pulumi-helm-prometheus-grafana" run the following command to fetch prometheus & grafana repo.
 
 ```
 helm fetch --untar stable/prometheus
+
+helm fetch --untar stable/grafana
 
 ```
 3. Create a new Pulumi project:
