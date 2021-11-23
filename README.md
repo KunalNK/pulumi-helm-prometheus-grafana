@@ -12,23 +12,25 @@
 
 1. Create a directory:
 
-    ```
-    mkdir pulumi-helm-prometheus-grafana && pulumi-helm-prometheus-grafana
+```
+mkdir pulumi-helm-prometheus-grafana && pulumi-helm-prometheus-grafana
 
-    
-    ```
+```
+
 2. Now inside the directory "pulumi-helm-prometheus-grafana" run the following command to fetch prometheus repo.
+
 ```
 helm fetch --untar stable/prometheus
 
 ```
-2. Create a new Pulumi project:
+3. Create a new Pulumi project:
 
-    ```
-    pulumi new kubernetes-python --force
-    
-    ```
-3. Next, replace the contents of __main__.py file with the following code.
+```
+pulumi new kubernetes-python --force
+
+```
+4. Next, replace the contents of __main__.py file with the following code.
+
 ```
 from pulumi_kubernetes.helm.v3 import Chart, LocalChartOpts
 
