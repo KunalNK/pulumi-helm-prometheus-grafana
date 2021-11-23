@@ -87,7 +87,7 @@ adminPassword: "admin"
     
 ```
 
-4. Run `pulumi up` to preview and deploy changes.  After the preview is shown you will be
+7. Run `pulumi up` to preview and deploy changes.  After the preview is shown you will be
     prompted if you want to continue or not.
 ```
  +   pulumi:pulumi:Stack                                                    Testing-dev                            creating.      
@@ -113,7 +113,7 @@ adminPassword: "admin"
 ```
 
 
-5. Now, verify the status of pods running inside the kubernetes cluster by running the following command.
+8. Now, verify the status of pods running inside the kubernetes cluster by running the following command.
 
 ```
 kubectl get po
@@ -129,7 +129,7 @@ prometheus-node-exporter-ckgb5                   1/1     Running   0          6m
 prometheus-server-544c49b55c-xphgj               2/2     Running   0          6m10s
 
 ```
-6. Now, check the service type, by running the following command.
+9. Now, check the service type, by running the following command.
 
 ```
 kubectl get svc
@@ -147,6 +147,6 @@ prometheus-pushgateway          ClusterIP      10.245.55.43     <none>          
 prometheus-server               LoadBalancer   10.245.90.226    137.184.240.61   80:32662/TCP     6m57s
 
 ```
-7. Copy the EXTERNAL-IP of prometheus & grafana server, paste in the browser to see the output of prometheus server.(Note: Prometheus server accessible at port 80 & Grafana server at port 3000)
+10. Copy the EXTERNAL-IP of prometheus & grafana server, paste in the browser to see the output of prometheus server.(Note: Prometheus server accessible at port 80 & Grafana server at port 3000)
 
-8. To clean up resources, run `pulumi destroy` and answer the confirmation question at the prompt.
+11. To clean up resources, run `pulumi destroy` and answer the confirmation question at the prompt.
