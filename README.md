@@ -1,5 +1,5 @@
-# pulumi-helm-prometheus-grafana
-# Deploying Prometheus Monitoring tool using Pulumi & Helm (using local Chart) 
+
+# Deploying Prometheus & Grafana application on Kubernetes Cluster using Pulumi & Helm Charts.
 
 ## Prerequisites
 ```
@@ -13,10 +13,11 @@
 1. Create a directory:
 
     ```
-    mkdir pulumi-helm-prom && cd pulumi-helm-prom
+    mkdir pulumi-helm-prometheus-grafana && pulumi-helm-prometheus-grafana
+
     
     ```
-2. Now inside the directory "pulumi-helm-prom" run the following command to fetch prometheus repo.
+2. Now inside the directory "pulumi-helm-prometheus-grafana" run the following command to fetch prometheus repo.
 ```
 helm fetch --untar stable/prometheus
 
