@@ -1,0 +1,6 @@
+name: Testing
+runtime:
+  name: python
+  options:
+    virtualenv: venv
+description: Demo project
