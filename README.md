@@ -53,7 +53,17 @@ grafana = Chart(
 
 ```
 
-5. Now, go to grafana folder & open the values.yaml file to customize the grafana login password as shown below
+5. Now, go to grafana folder & open the values.yaml file to change the service type to "LoadBalancer" & customize the grafana login password as shown below
+```
+## Expose the grafana service to be accessed from outside the cluster (LoadBalancer service).
+## or access it from within the cluster (ClusterIP service). Set the service type and the port to serve it.
+## ref: http://kubernetes.io/docs/user-guide/services/
+##
+service:
+  type: LoadBalancer
+  port: 80
+  targetPort: 3000
+```
 
 ```
 # Administrator credentials when not using an existing secret (see below)
